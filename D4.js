@@ -45,10 +45,10 @@ console.log(crazySumResult)
 
 const crazyDiff = function (x) {
     if (x > 19) {
-        return ((x - 19) * 3)
+        return Math.abs((x - 19) * 3)
     }
     else {
-        return (x - 19)
+        return Math.abs(x - 19)
     }
 
 }
@@ -85,13 +85,14 @@ console.log(boundaryResult)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const epify = function (name) {
-    if (name.startsWith('Epicode')) {
-        return
+    if (name.startsWith("EPICODE")) {
+        return name
+    } else {
+        return "EPICODE" + " " + name
     }
-    return "EPICODE" + " " + name
 }
 
-console.log(epify("EPICODE"))
+console.log(epify("EPICODE è un bel bootcamp"))
 console.log(epify('Maddalena'))
 
 
